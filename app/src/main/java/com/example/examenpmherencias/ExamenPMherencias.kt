@@ -21,15 +21,16 @@ fun filtraJuegos(catalogo:List<Videojuego>, ano_input:Int): MutableList<Videojue
     return devuelve
 }
 
-//Ejercicio 03
-fun mapaJuegos(juegos:List<Videojuego>):Map<String,Int> {
-    var mapa=mutableMapOf<String, Int>()
-    for(juego in juegos){
-        if (mapa.containsKey(juego.plataforma)) {
+//Ejercicio 03 - lo comento para que compile, espero que cuente algo ><
 
-        }
-    }
-}
+//fun mapaJuegos(juegos:List<Videojuego>):Map<String,Int> {
+//    var mapa=mutableMapOf<String, Int>()
+//    for(juego in juegos){
+//        if (mapa.containsKey(juego.plataforma)) {
+//
+//        }
+//    }
+
 
 
 
@@ -114,8 +115,22 @@ var liga= mutableListOf<Equipo>(
 )
 
 
+//Ejercicio 11
+fun championsLeague(equipos:List<Equipo>){
+    var partidos=equipos.shuffled()
+    var por_parejas=0
+    var i=0
+    while(por_parejas<4){
+        while(i in 0..partidos.size-1){
+            println("${partidos[i].nombre} vs ${partidos[i+1].nombre}")
+            i+=2
+        }
+        por_parejas+=2
+    }
+}
+
 
 fun main(){
-
+    println()
 
 }
