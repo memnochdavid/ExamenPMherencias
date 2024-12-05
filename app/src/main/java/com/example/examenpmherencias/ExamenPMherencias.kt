@@ -116,8 +116,8 @@ var liga= mutableListOf<Equipo>(
 
 
 //Ejercicio 11
-fun championsLeague(equipos:List<Equipo>){
-    var partidos=equipos.shuffled()
+fun championsLeague(liga:List<Equipo>){
+    var partidos=liga.shuffled()
     var por_parejas=0
     var i=0
     while(por_parejas<4){
