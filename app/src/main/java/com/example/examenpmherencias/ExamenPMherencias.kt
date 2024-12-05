@@ -22,9 +22,12 @@ fun filtraJuegos(catalogo:List<Videojuego>, ano_input:Int): MutableList<Videojue
 }
 
 //Ejercicio 03 - lo comento para que compile, espero que cuente algo ><
-
+//
 //fun mapaJuegos(juegos:List<Videojuego>):Map<String,Int> {
-//    var mapa=mutableMapOf<String, Int>()
+//    var mapa=mutableMapOf<String, MutableList<String>>()
+//    //var listaTitulos=mutableListOf<String>()
+//    var listaTitulos=juegos.sortedBy { it.plataforma }
+//
 //    for(juego in juegos){
 //        if (mapa.containsKey(juego.plataforma)) {
 //
